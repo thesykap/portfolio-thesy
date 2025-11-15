@@ -6,8 +6,8 @@ header{
     width: 300px;
     height: auto;
     justify-content: center;
-    overflow-y: auto;
-       
+    overflow-x: hidden;
+    overflow-y: auto;  
 }
 
  body {
@@ -18,8 +18,7 @@ header{
 .photo {
   width: 200px;  
   height: 200px;
-  border-radius: 10%;     
-  overflow: hidden;       
+  border-radius: 10%;           
   border: 9px solid rgba(128, 128, 128, 0.562); 
   margin-top: 35px;
   display: flex;          
