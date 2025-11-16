@@ -4,40 +4,44 @@ header{
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: auto;
-    justify-content: center;
+    height: 100vh;
+    justify-content: center;  
+    align-content: center;
     overflow-y: auto;
-       
+    overflow-x: hidden;
+    position: fixed;
 }
 
- body {
+body{
   margin: 0;
   padding: 0; 
+  flex-direction: column;
 }
 
 .photo {
   width: 200px;  
   height: 200px;
-  border-radius: 10%;     
-  overflow: hidden;       
-  border: 9px solid rgba(128, 128, 128, 0.562); 
-  margin-top: 35px;
+  border-radius: 20px;          
+  border: 8px solid rgba(128, 128, 128, 0.384); 
   display: flex;          
-  align-items: center;    
-  justify-content: center; 
+  margin-top: 250px;
+  max-width: 220px;
 }
-
 
 .photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  justify-content: center;
+  border-radius: 10px;
 }
-.nom{
+
+.nom h1{
     color: whitesmoke;
     font-family: Ubuntu, sans-serif;
-    font-size: 10px;
+    font-size: 24px;
+    font-weight: 100;
 }
 
 header .nom{
@@ -46,8 +50,8 @@ header .nom{
 
 .info-nav li{
   margin-bottom: 20px;
-    margin-right: 140px;
-    
+  margin-right: 50px;
+  width: 100%;
 }
 
 ul li a {
@@ -70,23 +74,19 @@ ul li a:hover i {
 i {
   color: white;
   margin-right: 8px;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
-
 
 ul li {
   margin: 40px 0;
   list-style: none;
 }
 
-
-
 .icones {
-  margin-left: 30px;
+  margin-left: 20px;
   display: flex;
   gap: 10px;
-
+  margin-bottom: 25px;
 }
 
 .icones a {
@@ -107,8 +107,182 @@ ul li {
   transition: color 0.3s ease;
 }
 
-
 .icones a:hover {
   background-color: #00ff88; 
+}
+
+main {
+  
+  margin-left: 300px;
+  background-color:#25303f;
+  padding: 0 40px;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero .home .titre{
+  font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+.hero .home .titre2{
+  color: #22e7a1;
+  text-decoration: underline;
+}
+
+.home p{
+  font-family: Ubuntu;
+  line-height: 1.70;
+  color:#d1d5db;
+  font-size: 1.125rem;
+}
+.photos{
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+  margin-left: 70px;
+  overflow: visible
+}
+
+.ma-photo .photos img{
+  border-radius: 20px;
+}
+
+.ma-photo .photos{
+  display: flex;
+}
+
+.ma-photo{
+  position: relative;
+}
+
+.mark{
+   box-shadow: #f9fafb;
+}
+
+.ma-photo .mark {
+  display: block;
+  transition: 0.3s ease;
+}
+
+.ma-photo .mark:hover {
+  transform: scale(1.1);
+}
+
+.buttons .button1{
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #22e7a1;
+  border: none;
+  font-family: Ubuntu;
+  font-size: 1.1rem;
+  color: #1f2937;
+  font-weight: 500;
+}
+.buttons .button2{
+  margin-left: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #25303f;
+  color: #f9fafb;
+  border:2px solid gray ;
+  font-family: Ubuntu;
+  font-size: 1.1rem;
+}
+
+.buttons{
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.hero .home .actions {
+  display: flex;
+  gap: 3rem;
+}
+
+.hero .home .actions .act .nombre{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00ff88;
+    margin-bottom: 0; 
+    font-family: System-ui;
+}
+
+.hero .home .actions .act .texte{
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  color:rgba(255, 255, 255, 0.6);
+  margin-top: 0.123rem; 
+  font-weight: 400;
+  font-family: System-ui;
+}
+
+.works1{
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293443;
+  margin-bottom: 260px;
+  margin-right: 400px;  
+}
+
+.works1 i{
+  color: #00ff88;
+}
+
+.works2{
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293443;
+  margin-bottom: 80px;  
+}
+
+.works2 i{
+  color: #00ff88;
+}
+
+.works3{
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #293443;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  position: relative;
+  bottom: 170px;
+  left: 50px;
+}
+
+.works3 i{
+  color: #00ff88;
+}
+
+.works{
+  position: absolute;
+  bottom: 20px; 
+  right: 20px;
+  font-family: Ubuntu;
 }
 
