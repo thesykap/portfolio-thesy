@@ -12,10 +12,10 @@ header{
     position: fixed;
 }
 
- body{
+body{
   margin: 0;
   padding: 0; 
- 
+  flex-direction: column;
 }
 
 .photo {
@@ -26,9 +26,7 @@ header{
   display: flex;          
   margin-top: 250px;
   max-width: 220px;
-
 }
-
 
 .photo img {
   width: 100%;
@@ -37,8 +35,8 @@ header{
   display: block;
   justify-content: center;
   border-radius: 10px;
-  
 }
+
 .nom h1{
     color: whitesmoke;
     font-family: Ubuntu, sans-serif;
@@ -76,17 +74,13 @@ ul li a:hover i {
 i {
   color: white;
   margin-right: 8px;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
-
 
 ul li {
   margin: 40px 0;
   list-style: none;
 }
-
-
 
 .icones {
   margin-left: 20px;
@@ -113,21 +107,19 @@ ul li {
   transition: color 0.3s ease;
 }
 
-
 .icones a:hover {
   background-color: #00ff88; 
 }
 
-
-
 main {
-  flex: 1;
+  
   margin-left: 300px;
   background-color:#25303f;
   padding: 0 40px;
   color: #fff;
   display: flex;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .hero .home .titre{
@@ -152,7 +144,7 @@ main {
   height: 500px;
   margin-top: 40px;
   margin-left: 70px;
-
+  overflow: visible
 }
 
 .ma-photo .photos img{
@@ -169,6 +161,15 @@ main {
 
 .mark{
    box-shadow: #f9fafb;
+}
+
+.ma-photo .mark {
+  display: block;
+  transition: 0.3s ease;
+}
+
+.ma-photo .mark:hover {
+  transform: scale(1.1);
 }
 
 .buttons .button1{
@@ -204,7 +205,6 @@ main {
   gap: 3rem;
 }
 
-
 .hero .home .actions .act .nombre{
     display: block;
     font-size: 2rem;
@@ -235,8 +235,7 @@ main {
   align-items: center;
   background-color: #293443;
   margin-bottom: 260px;
-  margin-right: 400px;
-  
+  margin-right: 400px;  
 }
 
 .works1 i{
@@ -253,8 +252,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #293443;
-  margin-bottom: 80px;
-  
+  margin-bottom: 80px;  
 }
 
 .works2 i{
@@ -275,7 +273,6 @@ main {
   position: relative;
   bottom: 170px;
   left: 50px;
-  
 }
 
 .works3 i{
@@ -288,6 +285,4 @@ main {
   right: 20px;
   font-family: Ubuntu;
 }
-
-
 
