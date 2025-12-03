@@ -1477,5 +1477,100 @@ main {
 }
 .portfolio-image:hover{
   transform: scale(1.05);
-  
 }
+.service{
+  padding: 0 0 40px 0;  
+  text-align: center; 
+  margin-bottom: 40px;
+}
+.service .my-service h1{
+  color: white;
+  font-size: 28px;         
+  font-weight: 400;
+  margin-bottom: 15px; 
+  font-family: Ubuntu, sans-serif;
+}
+.service .my-service p{
+  font-family: sans-serif;
+  color: rgb(243, 244, 246);
+  font-size: 16px;
+}
+.palette{
+  width:80px;
+  height:80px ;
+  border-radius: 50px;
+  background-color: #22e7a21c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.palette i{
+  color: #22e7a1;
+  margin-left: 9px;
+  font-size: 30px;
+}
+.palette-description{
+  margin-top: 40px;
+}
+.palette-description h1{
+  font-size: 28px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  color:#f9fafb;
+  text-align: start;
+}
+.palette-description p{
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 400;
+  text-align: start;
+  color: #f3f4f65e;
+}
+.service-contener{
+  display: grid;
+  max-width: 900px;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  margin: 0 auto;
+}
+.service-contener .service1{
+  width:430px;
+  padding: 20px; 
+  border-radius: 10px;
+  border: none;
+  margin-top: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.learn{
+  display: flex;
+  gap: 10px;
+  text-align: start;
+}
+.learn i{
+  color: #22e7a1;
+}
+.service1 .learn p{
+  color: #22e7a1;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-family: Roboto, system-ui, -apple-sy;
+  margin:0;
+}
+.service-contener .service1:hover {
+  background-color: #1f293777;
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(245, 245, 245, 0.1);
+}
+.service-contener .service1:hover .palette{
+  background-color: #22e7a1;
+}
+.service-contener .service1:hover .palette i{
+  color: #1f2937;
+}
+.service-contener .service1:hover .palette-description h1{
+  color: #22e7a1;
+}
+
