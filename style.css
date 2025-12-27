@@ -8,14 +8,13 @@ header{
     justify-content: center;  
     align-content: center;
     position: fixed;
-    overflow-y: auto;
+    overflow-y: auto; 
     
 }
 
 body{
   margin: 0;
   padding: 0; 
-  
 }
 
 .photo {
@@ -38,22 +37,33 @@ body{
 }
 
 .nom h1{
-    color: whitesmoke;
-    font-family: Ubuntu, sans-serif;
-    font-size: 24px;
-    font-weight: 100;
+  color: whitesmoke;
+  font-family: Ubuntu, sans-serif;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 header .nom{
   margin-top: 19px;
 }
-
+#cacher{
+  padding: 10px 20px;
+  background-color: #1f293775;
+  color: white;
+  border: 1px solid gray;
+  position: fixed;
+  outline: none;
+  border-radius: 10px;
+  z-index: 1000;
+  top: 10px;
+  left: 350px;
+  display: none;
+}
 .info-nav li{
   margin-bottom: 20px;
   margin-right: 50px;
   width: 100%;
 }
-
 ul li a {
   text-decoration: none;
   color: white;
@@ -61,7 +71,6 @@ ul li a {
   transition: color 0.3s ease;
   display: flex;  
 }
-
 
 ul li a:hover {
   color: #00ff88; 
@@ -111,7 +120,7 @@ ul li {
   background-color: #00ff88; 
 }
 section{
-   padding: 150px 0; 
+  padding: 150px 0; 
 }
 
 main {
@@ -181,30 +190,39 @@ main {
   color:#d1d5db;
   font-size: 1.125rem;
 }
-
-.buttons .button1{
-  width: 150px;
-  height: 50px;
-  border-radius: 8px;
-  background-color: #22e7a1;
-  border: none;
-  font-family: Ubuntu;
-  font-size: 1.1rem;
-  color: #1f2937;
-  font-weight: 500;
+.btn-groupe{
+  display: flex;
+  gap: 16px;
 }
-.buttons .button2{
-  margin-left: 20px;
-  width: 150px;
-  height: 50px;
+.btn{
+  font-family: Roboto;
   border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  padding: 17px 32px;
+  box-sizing: border-box;
+}
+.btn:hover{
+  transform: scale(1.03);
+}
+.btn1{
+  background-color: #22e7a1;
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+.buttons .btn2{
   background-color: #25303f;
   color: #f9fafb;
   border:2px solid gray ;
-  font-family: Ubuntu;
   font-size: 1.1rem;
+  transition: transform 0.2s ease,border-color 0.2s ease, color 0.2s ease ;
 }
-
+.buttons .btn2:hover{
+  border-color: #00ff88;
+  color: #00ff88;
+}
 .buttons{
   margin-top: 60px;
   margin-bottom: 25px;
@@ -239,6 +257,7 @@ main {
   left: 0;
   width: 100%;
 }
+
 .works1, .works2, .works3{
   position: absolute;
   display:flex ;
@@ -402,7 +421,8 @@ main {
   color: rgb(249, 250, 251);
   font-weight:500;
   font-size: 20px;
-  margin: 0 0 4px 0;  
+  margin: 0 0 4px 0; 
+  text-align: start; 
 }
 .domaine p{
   font-family: Roboto, system-ui, -apple-sy;
@@ -452,7 +472,7 @@ main {
   flex: 0 0 auto;
   width: 50%;
 }
-.about .bottoms{
+.about .btn-groupe{
   flex: 0 0 auto;
   width: 50%;
   align-items: center;
@@ -460,11 +480,16 @@ main {
 .about .creation{
   display: flex;
 }
-.bottoms{
-  margin-top: 120px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 80px;
+.about .btn2{
+  border: 1px solid rgba(243, 244, 246, 0.274);
+  padding: 17px 30px;
+  transition: transform 0.2s ease,border-color 0.2s ease, color 0.2s ease ;
+  background-color: #25303f;
+  color: #f9fafb;
+}
+.about .btn2:hover{
+  border-color: #22e7a1;
+  color: #22e7a1;
 }
 .create{
   margin-top: 40px;
@@ -481,33 +506,6 @@ main {
   color: #f3f4f6a9;
   font-weight: 500;
   font: 1.800rem;
-}
-.bottom1{
-  width: 190px;
-  height: 50px;
-  border-radius: 7px;
-  background-color: #22e7a1;
-  border: none;
-  color:#1f2937;
-  font-family: Roboto, system-ui, -apple-sy;
-  cursor: pointer;
-  font-size: 1.144rem;
-}
-.bottom2{
-  width: 170px;
-  height: 50px;
-  border-radius: 7px;
-  background-color: #293443;
-  color: #f3f4f6;
-  border: 1px solid #f3f4f662;
-  margin-left: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1.100rem;
-}
-.bottom2:hover{
-  border-color: #00ff88;
-  color: #22e7a1;
 }
 .activities{
   display: flex;
@@ -570,37 +568,37 @@ main {
   justify-content: center;
   margin-top: 19px;  
 }
-.skills {   
+.section-main {   
   padding: 0 0 40px 0;  
   text-align: center; 
   margin-bottom: 40px;     
 }
 
-.skills .my-skills h1 {
+.section-main h1 {
   color: white;
   font-size: 28px;         
   font-weight: 400;
   margin-bottom: 15px; 
   font-family: Ubuntu, sans-serif;
 }
-.underline{
+.section-main .underline{
   padding: 0 0 40px 0; 
   text-align: center;
 }
-.ligne1{
+.section-main .ligne1{
   width: 150px;                
   height: 1px;                
   background-color: #f9fafb6b;  
   margin: 0 auto;
   margin-top: 0;
 }
-.ligne2{
+.section-main .ligne2{
   width: 60px;                
   height: 3px;                
   background-color: #22e7a1;  
   margin: -2px auto 0 auto;  
 }
-.my-skills p{
+.section-main p{
   font-family: sans-serif;
   color: rgb(243, 244, 246);
   font-size: 16px;
@@ -1051,23 +1049,7 @@ main {
 .chiffre{
   color: #22e7a1;
 }
-.resume{
-  padding: 0 0 40px 0;  
-  text-align: center; 
-  margin-bottom: 40px; 
-}
-.resume .my-resume h1{
-  color: white;
-  font-size: 28px;         
-  font-weight: 400;
-  margin-bottom: 15px; 
-  font-family: Ubuntu, sans-serif;
-}
-.my-resume P{
-  font-family: sans-serif;
-  color: rgb(243, 244, 246);
-  font-size: 16px;
-}
+
 .resume .profesionnal{
   flex: 0 0 auto;
   width: 40%;
@@ -1292,6 +1274,13 @@ main {
   flex-direction: column;
   background-color: #2dd4be09;
 }
+.award-content, .awards-contents{
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.award-content:hover, .awards-contents:hover{
+  transform: scale(1.02); 
+  box-shadow: 0 0 30px rgba(245, 245, 245, 0.1);
+}
 
 .awards-contents .award-descript .master-text{
   font-size: 19px;
@@ -1362,24 +1351,7 @@ main {
   display: block;
   margin: 0;
 }
-.portfolio{
-  padding: 0 0 40px 0;  
-  text-align: center; 
-  margin-bottom: 40px;
-}
-.portfolio .my-portfolio h1{
-  color: white;
-  font-size: 28px;         
-  font-weight: 400;
-  margin-bottom: 15px; 
-  font-family: Ubuntu, sans-serif;
 
-}
-.portfolio .my-portfolio p{
-  font-family: sans-serif;
-  color: rgb(243, 244, 246);
-  font-size: 16px;
-}
 .portfolio-work{
   display: flex;
   gap: 30px;
@@ -1422,10 +1394,15 @@ main {
   align-items: center;
   transition: opacity 0.4s ease;
   border-radius: 10px;
+  gap: 10px;
 }
+.portfolio-image1:hover .portfolio-overlay {
+  opacity: 1;
+}
+
 .btn-action{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: rgb(37, 48, 63);
   display: flex;
@@ -1437,6 +1414,7 @@ main {
   color: #f9fafb;
   font-size: 18px;
   transition: color 0.3s ease; 
+  margin-left: 8px;
 }
 .btn-action:hover{
   background-color: #22e7a1;
@@ -1478,23 +1456,7 @@ main {
 .portfolio-image:hover{
   transform: scale(1.05);
 }
-.service{
-  padding: 0 0 40px 0;  
-  text-align: center; 
-  margin-bottom: 40px;
-}
-.service .my-service h1{
-  color: white;
-  font-size: 28px;         
-  font-weight: 400;
-  margin-bottom: 15px; 
-  font-family: Ubuntu, sans-serif;
-}
-.service .my-service p{
-  font-family: sans-serif;
-  color: rgb(243, 244, 246);
-  font-size: 16px;
-}
+
 .palette{
   width:80px;
   height:80px ;
@@ -1560,7 +1522,6 @@ main {
   margin:0;
 }
 .service-contener .service1:hover {
-  background-color: #1f293777;
   transform: scale(1.03);
   box-shadow: 0 0 30px rgba(245, 245, 245, 0.1);
 }
@@ -1573,4 +1534,329 @@ main {
 .service-contener .service1:hover .palette-description h1{
   color: #22e7a1;
 }
+
+.my-testimonial{
+  display: flex;
+  width: 980px;
+  height: 700px;
+  background-color: rgb(41, 51, 65);
+  padding: 20px;
+  flex-direction: column;
+}
+.message{
+  width: 870px;
+  height: auto;
+  background-color: #414C60;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border-top: 5px solid #22e7a1;
+}
+.message-contener{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.stars{
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.stars i{
+  color: yellow;
+}
+.quote{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #22e7a1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.quote i{
+  color: #1f2937;
+  margin-left: 7px;
+}
+.message .message-contener p{
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #f9fafb;
+   margin-top: 0;
+  margin-bottom: 20px;
+}
+.sofia{
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.sofia img{
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  border:4px solid #22e7a1;
+}
+.sofia-description{
+  text-align: start;
+}
+.personne .sofia-description h1{
+  font-size: 23px;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 600;
+  color: #f9fafb;
+  margin: 0;
+}
+.personne .sofia-description h4{
+  font-size: 16px;
+  color: #22e7a1;
+  margin: 0;
+  font-family: sans-serif;
+}
+.personne .sofia-description .corp{
+  font-size: 15px;
+  color: #f9fafb69;
+  font-family: sans-serif;
+  margin: 0;
+}
+.personne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 20px auto;
+}
+.bouton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #22e7a1;
+  border: none;
+  cursor: pointer;
+}
+.bouton i{
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 22px;
+  
+}
+.dots .dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #5d6675;
+ 
+}
+.dots{
+  display: flex;
+  gap: 15px;
+}
+
+.connection-contener{
+  display: flex;
+}
+
+.contact .connection{
+  flex: 0 0 auto;
+  width: 40%;
+}
+.contact .formulaire{
+  flex: 0 0 auto;
+  width: 60%;
+}
+.connection .chat{
+  margin-top: 60px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #22e7a21e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.connection h1{
+  text-align: start;
+  margin-top: 30px;
+}
+.my-contact .connection .connect_descript{
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color:#f3f4f6bf;
+  text-align: start;
+  line-height: 1.7;
+}
+.chat i{
+  color: #22e7a1;
+  font-size: 25px;
+  margin-left: 8px;
+}
+.contact-icon i{
+  color: #22e7a1;
+}
+.info-contact{
+  margin-top: 50px;
+  display: flex; 
+  flex-direction: column;
+  gap: 30px;
+}
+.info-contact .mail{
+  display: flex;
+  gap: 15px;
+}
+.info-contact .mail .mail-descript h1{
+  font-size: 13px;
+  margin: 0;
+  color: #f3f4f699;
+  font-weight: 500;
+}
+.info-contact .call{
+  display: flex;
+  gap: 15px;
+}
+.info-contact .call .call-descript h1{
+  font-size: 13px;
+  margin: 0;
+  color: #f3f4f699;
+  font-weight: 500;
+} 
+.info-contact .visit{
+  display: flex;
+  gap: 15px;
+}
+.info-contact .visit .visit-descript h1{
+  font-size: 13px;
+  margin: 0px;
+  color: #f3f4f699;
+  font-weight: 500;
+}
+.contact .my-contact .connection-contener .formulaire h1{
+  margin-top: 50px;
+  font-size: 32px;
+  text-align: start;
+}
+:root{
+  --text-color: #ecf0f1;
+  --input-bg: rgb(41, 52, 67) ;
+  --input-border: #f3f4f628;
+}
+form{
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;   
+}
+.form1{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-size: 14px;
+  text-align: start;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+input {
+  height: 60px;
+}
+textarea{
+  min-height: 180px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #22e7a1;
+}
+.btn-submit{
+  background-color: #22e7a1;
+  color: #1f2937;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  width: 200px;
+  height: 60px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-submit:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 30px #22e7a250;
+}
+span i{
+  color: #1f2937;
+}
+.arrow-up{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #22e7a1;
+  cursor: pointer;
+  outline: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-up i{
+  color: #1f2937;
+  font-size: 27px;
+  font-weight: 400;
+ margin-left: 8px;
+}
+
+
+@media(min-width:768px){
+ #cacher{
+  display: block;
+ }
+ header{
+  display: none; 
+ }
+ header.active{
+  display: block;
+ }
+}
+
 
