@@ -1873,7 +1873,7 @@ span i {
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 2;
+    ;
   }
   header.active {
     display: block;
@@ -1882,7 +1882,7 @@ span i {
   main {
     margin-left:0; 
     padding: 0 20px;
-    z-index: 1;
+  
   }
   .informations {
     flex-direction: column;
