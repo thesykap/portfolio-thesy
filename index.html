@@ -16,12 +16,17 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
     />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" >
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
 
   </head>
   <body>
+    <!--<button id="cacher">Menu</button>-->
     <header>
       <div class="photo"><img src="mark.png" alt="ma photo" /></div>
       <div class="nom"><h1>Mark Andersen</h1></div>
@@ -70,7 +75,7 @@
         <div class="home">
           <h1 class="titre">
             <span class="titre1">Creative Design &</span>
-            <sapn class="titre2">Visual Storyteller</sapn>
+            <span class="titre2">Visual Storyteller</span>
           </h1>
 
           <p>
@@ -117,10 +122,8 @@
         </div>
       </section>
       <section class="about">
-        <div class="salutation"><h1>Hi! I'm Mark Andersen</h1></div>
-        <div class="info">
-          <h4>Digital Product Designer & Creative Strategist</h4>
-        </div>
+        <h1 class="salutation">Hi! I'm Mark Andersen</h1>
+        <h4 class="info">Digital Product Designer & Creative Strategist</h4>
         <div class="informations">
           <div class="photo2">
             <img src="andersen1.png" alt="photo" />
@@ -132,20 +135,20 @@
                 </li>
                 <li>
                   <span class="dot"></span>
-                  <p>Available for projects</p>
+                  <p id="dot-text">Available for projects</p>
                 </li>
               </ul>
             </div>
           </div>
           <div class="description">
-            <p class="p1">
+            <p id="p1">
               I craft digital experiences that bridge the gap between
               user needs and business goals. With 7 years of
               experience in product design, I've helped startups and
               Fortune 500 companies create meaningful connections with their
               users.
             </p>
-            <p class="p2">
+            <p id="p2">
               My design philosophy centers around empathy, iteration, and
               impact. I believe great design isn't just about
               aesthetics—it's about solving real problems and
@@ -180,8 +183,8 @@
             <div class="quote-block">
               <div class="quote-mark">"</div>
               <p class="advice">
-                Good design is not about perfection—it's about understanding,<br />
-                empathy, and continuous learning from the people who use<br />
+                Good design is not about perfection—it's about understanding,
+                empathy, and continuous learning from the people who use
                 what we create.
               </p>
             </div>
@@ -192,12 +195,12 @@
         <div class="creation">
           <div class="create">
             <h1>
-              Let's create something<br />
+              Let's create something
               amazing together
             </h1>
             <p>
-              Whether you're looking to redesign an existing<br />
-              product or build something completely new, I'd love<br />
+              Whether you're looking to redesign an existing
+              product or build something completely new, I'd love
               to explore how we can bring your vision to life.
             </p>
           </div>
@@ -274,9 +277,9 @@
         </div>
         <div class="expertise">
           <div class="technical">
-            <h1 class="expert">Technical Expertise</h1>
-            <p class="tech">Core development and technical skills</p>
-            <div class="the-line1"></div>
+            <h1 class="exper">Technical Expertise</h1>
+            <p class="texts">Core development and technical skills</p>
+            <div class="underlines"></div>
             <div class="stack">
               <div class="full-content">
                 <h1 class="full">Full-Stack Development</h1>
@@ -286,7 +289,7 @@
                 <div class="unders1"></div>
                 <div class="unders2"></div>
               </div>
-              <div class="cl-content">
+              <div class="full-content">
                 <h1 class="full">Cloud Architecture</h1>
                 <p class="nbr">88%</p>
               </div>
@@ -294,7 +297,7 @@
                 <div class="under3"></div>
                 <div class="under4"></div>
               </div>
-              <div class="data-content">
+              <div class="full-content">
                 <h1 class="full">Database Design</h1>
                 <p class="nbr">85%</p>
               </div>
@@ -304,8 +307,8 @@
               </div>
               <h1 class="expert">Creative Design</h1>
               <p class="texts">Visual and user experience design</p>
-              <div class="the-line1"></div>
-              <div class="ui-content">
+              <div class="the-line"></div>
+              <div class="full-content">
                 <h1 class="full">UI/UX Design</h1>
                 <p class="nbr">94%</p>
               </div>
@@ -313,7 +316,7 @@
                 <div class="ux1"></div>
                 <div class="ux2"></div>
               </div>
-              <div class="brand-content">
+              <div class="full-content">
                 <h1 class="full">Brand Identity</h1>
                 <p class="nbr">86%</p>
               </div>
@@ -321,6 +324,8 @@
                 <div class="ident1"></div>
                 <div class="ident2"></div>
               </div>
+              <div class="full-content">
+                <h1 class="full">Motion Graphics</h1>
               <div class="motion-content">
                 <h1 class="full">Motion Graphics</h1>
                 <p class="nbr">78%</p>
@@ -329,10 +334,10 @@
                 <div class="graph1"></div>
                 <div class="graph2"></div>
               </div>
-              <h1 class="strat">Strategic Leadership</h1>
-              <p class="manag">Management and business acumen</p>
+              <h1 class="exper">Strategic Leadership</h1>
+              <p class="texts">Management and business acumen</p>
               <div class="the-line1"></div>
-              <div class="proj-man-content">
+              <div class="full-content">
                 <h1 class="full">Project Management</h1>
                 <p class="nbr">90%</p>
               </div>
@@ -340,15 +345,15 @@
                 <div class="proj1"></div>
                 <div class="proj2"></div>
               </div>
-              <div class="team-content">
-                <h1 class="team">Team Coordination</h1>
+              <div class="full-content">
+                <h1 class="full">Team Coordination</h1>
                 <p class="nbr">87%</p>
               </div>
               <div class="team-coor">
                 <div class="coor1"></div>
                 <div class="coor2"></div>
               </div>
-              <div class="strat-content">
+              <div class="full-content">
                 <h1 class="full">Strategic Planning</h1>
                 <p class="nbr">83%</p>
               </div>
@@ -401,7 +406,7 @@
               </div>
             </div>
             <h1 class="achive">Recent Achievements</h1>
-            <div class="achivenemnt">
+            <div class="achivement">
               <div class="an-achive">
                 <p class="chiffre">2024</p>
                 <p class="certificat">Certified Kubernetes Administrator</p>
@@ -445,10 +450,14 @@
               </div>
               <div class="line-conteneur">
                 <div class="line-content">
-                  <div class="timeline"></div>
-                  <div class="point-top">.</div>
-                  <div class="point-middle">.</div>
-                  <div class="point-bottom">.</div>
+                    <div class="line0"></div>
+                    <div class="point"><i class="bi bi-dot"></i></div>
+                    <div class="lines1"></div>
+                    <div class="point"><i class="bi bi-dot"></i></div>
+                    <div class="line2"></div>
+                    <div class="point"><i class="bi bi-dot"></i></div>
+                    <div class="line3"></div>
+                  
                 </div>
                 <div class="annee-expe">
                   <h1 class="annee1">2023 - Present</h1>
@@ -474,7 +483,7 @@
                   <h1 class="annee1">2017 - 2020</h1>
                   <h1 class="director">UX/UI Designer</h1>
                   <h4 class="ltd">Creative Solutions Agency</h4>
-                  <p class="nemo">
+                  <p class="nemo2">
                     Quis autem vel eum iure reprehenderit qui in ea voluptate
                     velit esse quam nihil molestiae consequatur vel illum.
                   </p>
@@ -941,13 +950,18 @@
         <div class="my-footer">
           <h1>Mark Andersen</h1>
           <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-          <div class="limk-icon">
+          <div class="link-icon">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-skype"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a></a>
-        </div>
+          </div>
+          <div class="link-line"></div>
+          <div class="copyrigth">
+            <p class="copy1">Copyright <span> Mark Andersen</span> All Rights Reserved</p>
+            <p class="copy2">Designed by <span> BootstrapMade</span></p>
+          </div>
         </div>
     </footer>
     <button class="arrow-up"><i class="bi bi-arrow-up-short"></i></button>
