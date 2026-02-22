@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" >
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
+    <!--animation-->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   </head>
   <body>
-    <button id="cacher">Menu</button>
-    <header>
+    <header id="heade">
       <div class="photo"><img src="mark.png" alt="ma photo" /></div>
       <div class="nom"><h1>Mark Andersen</h1></div>
       <nav class="nav">
@@ -70,9 +72,9 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <button id="cacher">Menu</button>
-        <div class="home">
+      <section class="hero" data-aos="fade-up" data-aos-delay="100">
+        <button id="cacher"><i class="bi bi-list"></i></button>
+        <div class="home" >
           <h1 class="titre">
             <span class="titre1">Creative Design &</span>
             <span class="titre2">Visual Storyteller</span>
@@ -85,11 +87,11 @@
             connect with audiences on a deeper level.
           </p>
 
-          <div class="buttons btn-groupe">
+          <div class="buttons btn-groupe" data-aos="fade-up" data-aos-delay="200">
             <button class="btn btn2">View my work</button>
             <button class="btn btn2">Get in Touch</button>
           </div>
-          <div class="actions">
+          <div class="actions" data-aos="fade-up" data-aos-delay="300">
             <div class="act">
               <h2 class="nombre">50+</h2>
               <p class="texte">Projects Completed</p>
@@ -109,23 +111,23 @@
         <div class="ma-photo">
           <img src="mark2.png" alt="photo" />
           <div class="works">
-            <div class="works1">
+            <div class="works1" data-aos="zoom-in" data-aos-delay="100">
               <i class="bi bi-palette"></i><span>UI/UX Design</span>
             </div>
-            <div class="works2">
+            <div class="works2" data-aos="fade-up" data-aos-delay="100">
               <i class="bi bi-camera"></i><span>Photography</span>
             </div>
-            <div class="works3">
+            <div class="works3" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-code-square"></i><span>Web Developper</span>
             </div>
           </div>
         </div>
       </section>
       <section class="about">
-        <h1 class="salutation">Hi! I'm Mark Andersen</h1>
-        <h4 class="info">Digital Product Designer & Creative Strategist</h4>
+        <h1 class="salutation" data-aos="fade-up">Hi! I'm Mark Andersen</h1>
+        <h4 class="info" data-aos="fade-up" data-aos-delay="100">Digital Product Designer & Creative Strategist</h4>
         <div class="informations">
-          <div class="photo2">
+          <div class="photo2" data-aos="fade-right">
             <img src="andersen1.png" alt="photo" />
             <div class="localisation">
               <ul>
@@ -140,7 +142,7 @@
               </ul>
             </div>
           </div>
-          <div class="description">
+          <div class="description" data-aos="fade-left">
             <p id="p1">
               I craft digital experiences that bridge the gap between
               user needs and business goals. With 7 years of
@@ -155,7 +157,7 @@
               creating value for both users and businesses.
             </p>
             <div class="others">
-              <div class="service">
+              <div class="service" data-aos="fade-up">
                 <div class="icon"><i class="bi bi-lightbulb"></i></div>
                 <div class="domaine">
                   <h1>Product Strategy</h1>
@@ -165,14 +167,14 @@
                   </p>
                 </div>
               </div>
-              <div class="service">
+              <div class="service" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bi bi-phone"></i></div>
                 <div class="domaine">
                   <h1>Mobile & Web Design</h1>
                   <p>Responsive interfaces and seamless user experiences</p>
                 </div>
               </div>
-              <div class="service">
+              <div class="service" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bi bi-graph-up"></i></div>
                 <div class="domaine">
                   <h1>Design Systems</h1>
@@ -192,7 +194,7 @@
           
         </div>
         <div class="line"></div>
-        <div class="creation">
+        <div class="creation" data-aos="fade-up">
           <div class="create">
             <h1>
               Let's create something
@@ -210,55 +212,51 @@
           </div>
         </div>
         <div class="activities">
-          <div class="activity">
-            <div class="number">127</div>
-            <div class="text1">Voluptas nulla pariatur</div>
-            <div class="line1"></div>
-            <div class="items">
-              <div class="icons"><i class="bi bi-trophy"></i></div>
-              <div class="content">
-                <h1>Excellence Award</h1>
-                <p>
-                  Ut enim ad minima<br />
-                  veniam quis
-                </p>
-              </div>
+          <div class="stats-row">
+            <div class="stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-counter="127" data-suffix="">
+              <div class="number">0</div>
+              <div class="text1">Voluptas nulla pariatur</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-counter="89" data-suffix="K">
+              <div class="number">0</div>
+              <div class="text1">Nostrum exercitationem</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-counter="234" data-suffix="+">
+              <div class="number">0</div>
+              <div class="text1">Temporibus autem</div>
             </div>
           </div>
-          <div class="activity">
-            <div class="number">89K</div>
-            <div class="text1">Nostrum exercitationem</div>
-            <div class="line1"></div>
-            <div class="items">
-              <div class="icons"><i class="bi bi-star"></i></div>
-              <div class="content">
-                <h1>Recognition</h1>
-                <p>
-                  Sed do eiusmod tempor<br />
-                  incididunt
-                </p>
+          <div class="line1"></div>
+          <div class="awards-rows">
+            <div class="activity">
+              <div class="items">
+                <div class="icons"><i class="bi bi-trophy"></i></div>
+                <div class="content">
+                  <h1>Excellence Award</h1>
+                  <p>Ut enim ad minima veniam quis</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="activity">
-            <div class="number">234+</div>
-            <div class="text1">Temporibus autem</div>
-            <div class="line1"></div>
-            <div class="items">
-              <div class="icons"><i class="bi bi-gem"></i></div>
+              <div class="items">
+                <div class="icons"><i class="bi bi-star"></i></div>
+                <div class="content">
+                  <h1>Recognition</h1>
+                  <p>Sed do eiusmod tempor incididunt</p>
+                </div>
+              </div>
+              <div class="items">
+                <div class="icons"><i class="bi bi-lightbulb"></i></div>
               <div class="content">
                 <h1>Innovation</h1>
-                <p>
-                  Lorem ipsum dolor sit<br />
-                  amet consectetur
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
               </div>
             </div>
           </div>
+           
         </div>
       </section>
       <section class="skills">
-        <div class="my-skills section-main">
+        <div class="my-skills section-main" data-aos="fade-up">
           <h1>Skills</h1>
           <div class="underline">
             <div class="ligne1"></div>
@@ -270,15 +268,18 @@
             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
             fugiat sit in iste officiis commodi quidem hic quas.
           </p>
-          <p class="text">
+          <p class="text" data-aos="fade-up" data-aos-delay="100">
             Mastery achieved through continuous exploration and dedicated
             refinement of craft
           </p>
         </div>
-        <div class="expertise">
+        <div class="expertise" data-aos="fade-up" data-aos-delay="200">
           <div class="technical">
-            <h1 class="exper">Technical Expertise</h1>
-            <p class="texts">Core development and technical skills</p>
+            <div class="til-all" data-aos="fade-up" data-aos-delay="300">
+              <h1 class="exper">Technical Expertise</h1>
+              <p class="texts">Core development and technical skills</p>
+            </div>
+            
             <div class="underlines"></div>
             <div class="stack">
               <div class="full-content">
@@ -301,75 +302,78 @@
                 <h1 class="full">Database Design</h1>
                 <p class="nbr">85%</p>
               </div>
-              <div class="unde">
-                <div class="unde5"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="unde6"></div>
               </div>
-              <h1 class="expert">Creative Design</h1>
-              <p class="texts">Visual and user experience design</p>
-              <div class="the-line"></div>
+              <div class="til-all" data-aos="fade-up" data-aos-delay="400">
+                <h1 class="exper">Creative Design</h1>
+                <p class="texts">Visual and user experience design</p>
+              </div>
+
+              <div class="underlines"></div>
               <div class="full-content">
                 <h1 class="full">UI/UX Design</h1>
                 <p class="nbr">94%</p>
               </div>
-              <div class="ux">
-                <div class="ux1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="ux2"></div>
               </div>
               <div class="full-content">
                 <h1 class="full">Brand Identity</h1>
                 <p class="nbr">86%</p>
               </div>
-              <div class="ident">
-                <div class="ident1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="ident2"></div>
               </div>
               <div class="full-content">
                 <h1 class="full">Motion Graphics</h1>
-              <div class="motion-content">
-                <h1 class="full">Motion Graphics</h1>
                 <p class="nbr">78%</p>
               </div>
-              <div class="graph">
-                <div class="graph1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="graph2"></div>
               </div>
-              <h1 class="exper">Strategic Leadership</h1>
-              <p class="texts">Management and business acumen</p>
-              <div class="the-line1"></div>
+              <div class="til-all" data-aos="fade-up" data-aos-delay="500">
+                <h1 class="exper">Strategic Leadership</h1>
+                <p class="texts">Management and business acumen</p>
+              </div>
+              <div class="underlines"></div>
               <div class="full-content">
                 <h1 class="full">Project Management</h1>
                 <p class="nbr">90%</p>
               </div>
-              <div class="projs">
-                <div class="proj1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="proj2"></div>
               </div>
               <div class="full-content">
                 <h1 class="full">Team Coordination</h1>
                 <p class="nbr">87%</p>
               </div>
-              <div class="team-coor">
-                <div class="coor1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="coor2"></div>
               </div>
               <div class="full-content">
                 <h1 class="full">Strategic Planning</h1>
                 <p class="nbr">83%</p>
               </div>
-              <div class="plan">
-                <div class="plan1"></div>
+              <div class="unders">
+                <div class="unders1"></div>
                 <div class="plan2"></div>
               </div>
             </div>
           </div>
           <div class="year-experience">
-            <div class="recompense">
+            <div class="recompense"  data-aos="fade-up" data-aos-delay="300">
               <div class="my-icon"><i class="bi bi-trophy"></i></div>
               <h1 class="year">Years of Experience</h1>
               <div class="mini-content">
                 <div class="annee">
-                  <h1 class="nbr-year">8</h1>
+                  <h1 class="nbr-year">0</h1>
                   <p class="mini-year">Years</p>
                 </div>
               </div>
@@ -378,50 +382,55 @@
                 strategic problem-solving.
               </p>
             </div>
-            <h1 class="primaire">Primary Technologies</h1>
-            <div class="maitrise">
-              <div class="maitrise1">
-                <i class="bi bi-filetype-js"></i>
-                <p>JavaScript</p>
-              </div>
-              <div class="maitrise1">
-                <i class="bi bi-code-square"></i>
-                <p>React</p>
-              </div>
-              <div class="maitrise1">
-                <i class="bi bi-database-fill"></i>
-                <p>Node.js</p>
-              </div>
-              <div class="maitrise1">
-                <i class="bi bi-cloud"></i>
-                <p>AWS</p>
-              </div>
-              <div class="maitrise1">
-                <i class="bi bi-palette"></i>
-                <p>Figma</p>
-              </div>
-              <div class="maitrise1">
-                <i class="bi bi-diagram-3"></i>
-                <p>Docker</p>
-              </div>
-            </div>
-            <h1 class="achive">Recent Achievements</h1>
-            <div class="achivement">
-              <div class="an-achive">
-                <p class="chiffre">2024</p>
-                <p class="certificat">Certified Kubernetes Administrator</p>
-              </div>
-              <div class="the-line1"></div>
-              <div class="an-achive">
-                <p class="chiffre">2023</p>
-                <p class="certificat">Google Cloud Professional Architect</p>
-              </div>
-              <div class="the-line1"></div>
-              <div class="an-achive">
-                <p class="chiffre">2023</p>
-                <p class="certificat">AWS Solutions Architect Pro</p>
+            <div class="tech-all" data-aos="fade-up" data-aos-delay="400">
+                <h1 class="primaire">Primary Technologies</h1>
+                <div class="maitrise">
+                  <div class="maitrise1">
+                  <i class="bi bi-filetype-js"></i>
+                  <p>JavaScript</p>
+                  </div>
+                  <div class="maitrise1">
+                  <i class="bi bi-code-square"></i>
+                  <p>React</p>
+                  </div>
+                  <div class="maitrise1">
+                  <i class="bi bi-database-fill"></i>
+                  <p>Node.js</p>
+                  </div>
+                  <div class="maitrise1">
+                  <i class="bi bi-cloud"></i>
+                  <p>AWS</p>
+                  </div>
+                  <div class="maitrise1">
+                  <i class="bi bi-palette"></i>
+                  <p>Figma</p>
+                  </div>
+                  <div class="maitrise1">
+                  <i class="bi bi-diagram-3"></i>
+                  <p>Docker</p>
+                  </div>
               </div>
             </div>
+            <div class="ach-all" data-aos="fade-up" data-aos-delay="500">
+              <h1 class="achive">Recent Achievements</h1>
+              <div class="achivement">
+                <div class="an-achive">
+                  <p class="chiffre">2024</p>
+                  <p class="certificat">Certified Kubernetes Administrator</p>
+                </div>
+                <div class="the-line1"></div>
+                <div class="an-achive">
+                  <p class="chiffre">2023</p>
+                  <p class="certificat">Google Cloud Professional Architect</p>
+                </div>
+                <div class="the-line1"></div>
+                <div class="an-achive">
+                  <p class="chiffre">2023</p>
+                  <p class="certificat">AWS Solutions Architect Pro</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -439,7 +448,7 @@
             fugiat sit in iste officiis commodi quidem hic quas.
           </p>
           <div class="another-compet">
-            <div class="profesionnal">
+            <div class="profesionnal" data-aos="fade-right">
               <div class="bag"><i class="bi bi-briefcase-fill"></i></div>
               <div class="prof-content">
                 <h1 class="prof">Professional Experience</h1>
@@ -460,37 +469,43 @@
                   
                 </div>
                 <div class="annee-expe">
-                  <h1 class="annee1">2023 - Present</h1>
-                  <h1 class="director">Creative Director</h1>
-                  <h4 class="ltd">Innovation Studios Ltd</h4>
-                  <p class="nemo">
+                  <div class="resum" data-aos="fade-up">
+                    <h1 class="annee1">2023 - Present</h1>
+                    <h1 class="director">Creative Director</h1>
+                    <h4 class="ltd">Innovation Studios Ltd</h4>
+                    <p class="nemo">
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
                     odit aut fugit sed quia consequuntur magni dolores eos qui
                     ratione.
-                  </p>
-                  <div class="team-lead">
-                    <p>Team Leadership</p>
-                    <p>Strategic Planning</p>
-                    <p>Creative Vision</p>
+                    </p>
+                    <div class="team-lead">
+                      <p>Team Leadership</p>
+                      <p>Strategic Planning</p>
+                      <p>Creative Vision</p>
+                    </div>
                   </div>
-                  <h1 class="annee1">2020 - 2023</h1>
-                  <h1 class="director">Senior Product Designer</h1>
-                  <h4 class="ltd">Digital Innovations Corp</h4>
-                  <p class="nemo">
+                  <div class="resum" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="annee1">2020 - 2023</h1>
+                    <h1 class="director">Senior Product Designer</h1>
+                    <h4 class="ltd">Digital Innovations Corp</h4>
+                    <p class="nemo">
                     Ut enim ad minima veniam quis nostrum exercitationem ullam
                     corporis suscipit laboriosam nisi ut aliquid ex ea commodi.
-                  </p>
-                  <h1 class="annee1">2017 - 2020</h1>
-                  <h1 class="director">UX/UI Designer</h1>
-                  <h4 class="ltd">Creative Solutions Agency</h4>
-                  <p class="nemo2">
+                    </p>
+                  </div>
+                  <div class="resum" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="annee1">2017 - 2020</h1>
+                    <h1 class="director">UX/UI Designer</h1>
+                    <h4 class="ltd">Creative Solutions Agency</h4>
+                    <p class="nemo2">
                     Quis autem vel eum iure reprehenderit qui in ea voluptate
                     velit esse quam nihil molestiae consequatur vel illum.
-                  </p>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="education">
+            <div class="education" data-aos="fade-left">
               <div class="bag"><i class="bi bi-mortarboard-fill"></i></div>
               <div class="prof-content">
                 <h1 class="prof">Education & Qualifications</h1>
@@ -500,7 +515,7 @@
                 </p>
               </div>
               <div class="master">
-                <div class="award-content">
+                <div class="award-content" data-aos="zoom-in">
                   <div class="award-row">
                     <div class="award"><i class="bi bi-award"></i></div>
                     <div class="award-descript">
@@ -518,7 +533,7 @@
                     <p>Magna Cum Laude</p>
                   </div>
                 </div>
-                <div class="awards-contents">
+                <div class="awards-contents" data-aos="zoom-in">
                   <div class="award-row">
                     <div class="award"><i class="bi bi-laptop"></i></div>
                     <div class="award-descript">
@@ -532,7 +547,7 @@
                     esse cillum dolore eu fugiat nulla pariatur excepteur sint.
                   </p>
                 </div>
-                <div class="certifications">
+                <div class="certifications" data-aos="fade-up">
                   <h1 class="certificated">Professional Certifications</h1>
                   <div class="certifications-content">
                     <div class="patch-content">
@@ -565,184 +580,191 @@
           </div>
         </div>
       </section>
+
       <section class="portfolio">
-        <div class="my-portfolio section-main">
-          <h1>Portfolio</h1>
-          <div class="underline">
-            <div class="ligne1"></div>
-            <div class="ligne2"></div>
-          </div>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
-          <div class="portfolio-work">
-            <p>All Work</p>
-            <p>Branding</p>
-            <p>Web Design</p>
-            <p>Photography</p>
-            <p>Print Design</p>
-          </div>
-          <div class="portfolio-contener">
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-3.webp"
-                  alt="image1"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">Brand Identity</p>
-                  <p class="an">2024</p>
-                </div>
-                <h1>Elemental Branding</h1>
-                <p class="comp">
-                  Comprehensive brand identity design focusing on natural
-                  elements and sustainable business practices.
-                </p>
-              </div>
-            </div>
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-7.webp"
-                  alt="image2"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">Web Application</p>
-                  <p class="an">2024</p>
-                </div>
-                <h1>Digital Workspace</h1>
-                <p class="comp">
-                  Modern web application designed for remote collaboration with
-                  intuitive user experience and clean aesthetics.
-                </p>
-              </div>
+  <div class="my-portfolio section-main" data-aos="fade-up">
+    <h1>Portfolio</h1>
+
+    <div class="underline">
+      <div class="ligne1"></div>
+      <div class="ligne2"></div>
+    </div>
+
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+      aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+      quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+      fugiat sit in iste officiis commodi quidem hic quas.
+    </p>
+
+    <div class="portfolio-work">
+      <p>All Work</p>
+      <p>Branding</p>
+      <p>Web Design</p>
+      <p>Photography</p>
+      <p>Print Design</p>
+    </div>
+
+    <div class="portfolio-all" data-aos="fade-up">
+
+      <!-- Première ligne de projets -->
+      <div class="portfolio-contener">
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-3.webp"
+              alt="image1"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
             </div>
           </div>
-          <div class="portfolio-contener">
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="	https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-portrait-3.webp"
-                  alt="image3"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">Photography</p>
-                  <p class="an">2023</p>
-                </div>
-                <h1>Urban Narratives</h1>
-                <p class="comp">
-                  Street photography series capturing the essence of
-                  metropolitan life and human connections.
-                </p>
-              </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">Brand Identity</p>
+              <p class="an">2024</p>
             </div>
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-9.webp"
-                  alt="image4"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">Editorial Design</p>
-                  <p class="an">2024</p>
-                </div>
-                <h1>Annual Report Design</h1>
-                <p class="comp">
-                  Sophisticated annual report combining data visualization with
-                  compelling storytelling and premium print finishes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-contener">
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-12.webp"
-                  alt="image5"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">E-commerce</p>
-                  <p class="an">2024</p>
-                </div>
-                <h1>Sustainable Commerce</h1>
-                <p class="comp">
-                  Eco-conscious e-commerce platform design promoting sustainable
-                  products with seamless shopping experience.
-                </p>
-              </div>
-            </div>
-            <div class="portfolio-image">
-              <div class="portfolio-image1">
-                <img
-                  src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-11.webp"
-                  alt="imge6"
-                />
-                <div class="portfolio-overlay">
-                  <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
-                  <a href="" class="btn-action"
-                    ><i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="port-descript">
-                <div class="port-year">
-                  <p class="identite">Package Design</p>
-                  <p class="an">2023</p>
-                </div>
-                <h1>Artisan Collection</h1>
-                <p class="comp">
-                  Luxury packaging design series celebrating traditional
-                  craftsmanship with contemporary minimalist approach.
-                </p>
-              </div>
-            </div>
+            <h1>Elemental Branding</h1>
+            <p class="comp">
+              Comprehensive brand identity design focusing on natural
+              elements and sustainable business practices.
+            </p>
           </div>
         </div>
-      </section>
+
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-7.webp"
+              alt="image2"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">Web Application</p>
+              <p class="an">2024</p>
+            </div>
+            <h1>Digital Workspace</h1>
+            <p class="comp">
+              Modern web application designed for remote collaboration with
+              intuitive user experience and clean aesthetics.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deuxième ligne de projets -->
+      <div class="portfolio-contener">
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-portrait-3.webp"
+              alt="image3"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">Photography</p>
+              <p class="an">2023</p>
+            </div>
+            <h1>Urban Narratives</h1>
+            <p class="comp">
+              Street photography series capturing the essence of
+              metropolitan life and human connections.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-9.webp"
+              alt="image4"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">Editorial Design</p>
+              <p class="an">2024</p>
+            </div>
+            <h1>Annual Report Design</h1>
+            <p class="comp">
+              Sophisticated annual report combining data visualization with
+              compelling storytelling and premium print finishes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Troisième ligne de projets -->
+      <div class="portfolio-contener">
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-12.webp"
+              alt="image5"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">E-commerce</p>
+              <p class="an">2024</p>
+            </div>
+            <h1>Sustainable Commerce</h1>
+            <p class="comp">
+              Eco-conscious e-commerce platform design promoting sustainable
+              products with seamless shopping experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-image">
+          <div class="portfolio-image1">
+            <img
+              src="https://bootstrapmade.com/content/demo/MyPage/assets/img/portfolio/portfolio-11.webp"
+              alt="image6"
+            />
+            <div class="portfolio-overlay">
+              <a href="" class="btn-action"><i class="bi bi-eye"></i></a>
+              <a href="" class="btn-action"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="port-descript">
+            <div class="port-year">
+              <p class="identite">Package Design</p>
+              <p class="an">2023</p>
+            </div>
+            <h1>Artisan Collection</h1>
+            <p class="comp">
+              Luxury packaging design series celebrating traditional
+              craftsmanship with contemporary minimalist approach.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- fin portfolio-all -->
+
+  </div> <!-- fin my-portfolio -->
+</section>
+      
       <section class="service">
         <div class="my-service section-main">
           <h1>Services</h1>
@@ -755,7 +777,7 @@
             consectetur velit
           </p>
           <div class="service-contener">
-            <div class="service1">
+            <div class="service1" data-aos="fade-right">
               <div class="palette"><i class="bi bi-palette"></i></div>
               <div class="palette-description">
                 <h1>Brand Identity Design</h1>
@@ -770,7 +792,7 @@
                 </div>
               </div>
             </div>
-            <div class="service1">
+            <div class="service1" data-aos="fade-left">
               <div class="palette"><i class="bi bi-code-slash"></i></div>
               <div class="palette-description">
                 <h1>Web Development</h1>
@@ -785,7 +807,7 @@
                 </div>
               </div>
             </div>
-            <div class="service1">
+            <div class="service1" data-aos="fade-right">
               <div class="palette"><i class="bi bi-phone-fill"></i></div>
               <div class="palette-description">
                 <h1>UI/UX Design</h1>
@@ -800,7 +822,7 @@
                 </div>
               </div>
             </div>
-            <div class="service1">
+            <div class="service1" data-aos="fade-left">
               <div class="palette"><i class="bi bi-megaphone"></i></div>
               <div class="palette-description">
                 <h1>Digital Strategy</h1>
@@ -831,40 +853,123 @@
             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
             fugiat sit in iste officiis commodi quidem hic quas.
           </p>
-          <div class="message">
-            <div class="message-contener">
-              <div class="stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <div class="quote"><i class="bi bi-quote"></i></div>
-              </div>
-              <p>
-                "Outstanding service quality and innovative solutions have
-                completely transformed our business processes, resulting in
-                enhanced productivity and execptional customer satisfaction
-                throughtout our organisation."
-              </p>
-              <div class="personne">
-                <div class="sofia">
-                  <img
-                    src="https://bootstrapmade.com/content/demo/MyPage/assets/img/person/person-f-12.webp"
-                    alt="femme"
-                  />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="message">
+
+                  <div class="message-contener">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <div class="quote"><i class="bi bi-quote"></i></div>
+                    </div>
+                    <p>
+                      "Outstanding service quality and innovative solutions have
+                      completely transformed our business processes, resulting in
+                      enhanced productivity and execptional customer satisfaction
+                      throughtout our organisation."
+                    </p>
+                    <div class="personne">
+                      <div class="sofia">
+                        <img
+                          src="https://bootstrapmade.com/content/demo/MyPage/assets/img/person/person-f-12.webp"
+                          alt="femme"
+                        />
+                      </div>
+                      <div class="sofia-description">
+                        <h1>Sofia Martinez</h1>
+                        <h4>Operations Director</h4>
+                        <p class="corp">TechVision Corp</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="sofia-description">
-                  <h1>Sofia Martinez</h1>
-                  <h4>Operations Director</h4>
-                  <p class="corp">TechVision Corp</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="message">
+
+                  <div class="message-contener">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <div class="quote"><i class="bi bi-quote"></i></div>
+                    </div>
+                    <p>
+                      "Strategic collaboration and innovative thinking have enabled
+                       remarkable digital transformation,leading to increased efficiency 
+                       and measurable business growth results."
+                    </p>
+                    <div class="personne">
+                      <div class="sofia">
+                        <img
+                          src="https://bootstrapmade.com/content/demo/MyPage/assets/img/person/person-f-11.webp"
+                          alt="femme"
+                        />
+                      </div>
+                      <div class="sofia-description">
+                        <h1>Jennifer Wilson</h1>
+                        <h4>Digital strategy Lead</h4>
+                        <p class="corp">FutureScope Inc</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="swiper-slide">
+                <div class="message">
+
+                  <div class="message-contener">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <div class="quote"><i class="bi bi-quote"></i></div>
+                    </div>
+                    <p>
+                      "professional expertise and dedicated support have significally 
+                      improved our project delivery timelines while exceptional quality
+                      standards accross all our initiatives."
+                    </p>
+                    <div class="personne">
+                      <div class="sofia">
+                        <img
+                          src="https://bootstrapmade.com/content/demo/MyPage/assets/img/person/person-m-14.webp"
+                          alt="homme"
+                        />
+                      </div>
+                      <div class="sofia-description">
+                        <h1>Michael Anderson</h1>
+                        <h4>Project Manager</h4>
+                        <p class="corp">InnovateTech Ltd</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>  
+
             </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
           </div>
-          
+
         </div>
       </section>
+
       <section class="contact">
         <div class="my-contact section-main">
           <h1>Contact</h1>
