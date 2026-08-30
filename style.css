@@ -1051,3 +1051,315 @@ main {
 .chiffre{
   color: #22e7a1;
 }
+.resume{
+  padding: 0 0 40px 0;  
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+.resume .my-resume h1{
+  color: white;
+  font-size: 28px;         
+  font-weight: 400;
+  margin-bottom: 15px; 
+  font-family: Ubuntu, sans-serif;
+}
+.my-resume P{
+  font-family: sans-serif;
+  color: rgb(243, 244, 246);
+  font-size: 16px;
+}
+.resume .profesionnal{
+  flex: 0 0 auto;
+  width: 40%;
+}
+.resume .education{
+  flex: 0 0 auto;
+  width: 60%;
+}
+.another-compet{
+  display: flex;
+  gap: 80px;
+}
+.bag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px; 
+  background-color: #22e7a21e;
+  flex-shrink: 0;
+}
+.bag i{
+  color:#22e7a1 ;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+.prof{
+  font-family: Ubuntu, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #f9fafb;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+.profesionnal{
+  display: block;
+}
+.prof-content .descrip{
+  color:#f9fafb79 ;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-size: 17.6px;
+  font-weight: 600;
+  margin-right: 0;
+  text-align: left;
+  line-height: 1.7;
+}
+.education .prof{
+  margin-right: 240px;
+}
+.timeline{
+  text-align: left;
+  position: absolute;
+  background-color: #22e7a238;
+  width: 1px;
+  height:100%;
+}
+.line-content{
+  position: relative;
+  height: 800px;
+}
+.point-top, .point-middle, .point-bottom{
+  position: absolute;
+  font-size: 62px;
+  color: #22e7a1;
+  left: 0;
+  transform: translateX(-50%);
+}
+.line-content .point-top{
+  top: -30px;
+}
+.point-middle{
+  top: 40%;
+}
+.point-bottom{
+  bottom: 170px;
+}
+.line-conteneur .annee-expe .annee1{
+  font-size:15px;
+  text-align: start;
+  color: #22e7a1;
+  font-weight: 500;
+}
+.line-conteneur .annee-expe .director{
+  font-size: 20px;
+  text-align: start;
+}
+.ltd{
+  font-size: 16px;
+  font-family: Ubuntu, sans-serif;
+  color: #f3f4f691;
+  text-align: start;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin:0;
+}
+.line-conteneur .annee-expe .nemo{
+  font-size: 16px;
+  text-align: start;
+  letter-spacing: 1px;
+  color: #f3f4f6b2 ;
+  font-weight: 400;
+}
+.line-conteneur .annee-expe .nemo1{
+  font-size: 16px;
+  text-align: start;
+  letter-spacing: 1px;
+  color: #f3f4f6b2 ;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+.line-conteneur{
+  display: flex;
+  gap: 30px;
+}
+.team-lead{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-bottom: 40px;
+}
+.team-lead p{
+  font-size: 0.85rem;
+  color: #f3f4f6b2;
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #293443;
+  border: 1px solid #f3f4f61e ;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.award-content{
+  width: 470px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #22e7a23d;
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+  border-top: 3px solid #22e7a1;
+  flex-direction: column; 
+  background-color: #2dd4be09;
+}
+.award-row{
+  display: flex;
+  gap: 15px;
+}
+.award{
+  width: 40px; ;
+  height: 40px;
+  border-radius: 10px ;
+  background-color:#22e7a21a ;
+}
+.award i{
+  color: #22e7a1;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+.award-content .award-descript .master-text{
+  font-size: 19px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  color: #f9fafb;
+  margin: 0;
+  text-align: start;
+}
+.award-content .award-descript .tempus{
+  font-size: 16px;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 500;
+  color: #f3f4f686;
+}
+.award-content .award-descript .master-year{
+  font-size: 14px;
+  font-weight: 500;
+  color: #22e7a1;
+  letter-spacing: 0.02em;
+  font-family: Roboto, system-ui, -apple-sy;
+  text-align: start;
+}
+.award-content .magna{
+  font-size: 15px;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 400;
+  color: #f3f4f675;
+  text-align: start;
+  margin: 0;
+}
+.magna-cum{
+  width: 150px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #22e7a223;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.magna-cum p{
+   color: #22e7a1;
+   font-size: 12.8px;
+   font-weight: 400;
+}
+.awards-contents{
+  width: 470px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.11);
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+  flex-direction: column;
+  background-color: #2dd4be09;
+}
+
+.awards-contents .award-descript .master-text{
+  font-size: 19px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  color: #f9fafb;
+  margin: 0;
+  text-align: start;
+}
+.awards-contents .award-descript .tempus{
+  font-size: 16px;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 500;
+  color: #f3f4f686;
+}
+.awards-contents .award-descript .master-year{
+  font-size: 14px;
+  font-weight: 500;
+  color: #22e7a1;
+  letter-spacing: 0.02em;
+  font-family: Roboto, system-ui, -apple-sy;
+  text-align: start;
+}
+.awards-contents .magna{
+  font-size: 15px;
+  font-family: Roboto, system-ui, -apple-sy;
+  font-weight: 400;
+  color: #f3f4f675;
+  text-align: start;
+  margin: 0;
+}
+.certifications{
+  margin-top: 30px;
+}
+.master .certifications .certificated{
+  font-size: 17.6px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  color: #f9fafb;
+  text-align: start;
+}
+.patch i{
+  color: #22e7a1;
+}
+.patch-content{
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+.patch-content .patch-descript .advanced{
+  font-size: 15.2px;
+  font-weight: 500;
+  margin: 0;
+  text-align: start;
+}
+.patch-content .patch-descript .academy{
+  font-size: 13.6px;
+  color: #f3f4f675;
+  font-weight: 500;
+  text-align: start;
+}
+.the-lines1{
+  height: 1px;
+  background-color:rgba(243, 244, 246, 0.041);
+  width: 100%;
+  margin-top: 20px;
+  max-width: 520px;
+  display: block;
+  margin: 0;
+}
+
